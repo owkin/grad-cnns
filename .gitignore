@@ -1,0 +1,18 @@
+# Python-related
+__pycache__
+gradcnn.egg-info
+
+# LaTeX files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+
+# Data
+data
+*.pickle
