@@ -70,7 +70,9 @@ class Linear(nn.Linear, Module):
             def save_bgrad_hook(grad_output):
                 w, b = crb_backward.linear_backward(input, grad_output,
                                             bias=self.bias is not None)
-                self.weight.bgrad, self.bias.bgrad = w, b
+                self.weight.bgrad = w
+                if self.bias is not None:
+                    self.bias.bgrad = b
             output.register_hook(save_bgrad_hook)
 
         return output
