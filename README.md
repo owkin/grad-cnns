@@ -3,6 +3,8 @@
 *By Gaspar Rochette \<gaspar.rochette@ens.fr\>, Andre
 Manoel \<andre.manoel@owkin.com\> and Eric W. Tramel \<eric.tramel@owkin.com\>*
 
+*For more details, please check the report at [[arXiv:1912.06015]](https://arxiv.org/abs/1912.06015).*
+
 Computing per-example gradients is not a trivial task in deep learning
 frameworks. The naive approach, of simply looping through the examples, is
 often unpractical: for a batch size of $B$, this approach typically makes
